@@ -1,5 +1,5 @@
 @use "sass:map";
-@import '../../../theme/variables';
+@use '../../../theme/variables' as *;
 
 ion-fab-button {
   --background: var(--ion-color-step-150, #ffffff);
