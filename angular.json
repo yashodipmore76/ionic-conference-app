@@ -4,7 +4,6 @@
     "analytics": false,
     "schematicCollections": [
       "@angular-eslint/schematics",
-      "@cypress/schematic",
       "@schematics/angular"
     ]
   },
@@ -86,55 +85,6 @@
               "node_modules/leaflet/dist/leaflet.css"
             ],
             "tsConfig": "tsconfig.app.json"
-          }
-        },
-        "ct": {
-          "builder": "@cypress/schematic:cypress",
-          "configurations": {
-            "development": {
-              "devServerTarget": "app:serve:development"
-            }
-          },
-          "options": {
-            "devServerTarget": "app:serve",
-            "headless": false,
-            "testingType": "component",
-            "watch": true
-          }
-        },
-        "cypress-open": {
-          "builder": "@cypress/schematic:cypress",
-          "options": {
-            "headless": false,
-            "watch": true
-          }
-        },
-        "cypress-run": {
-          "builder": "@cypress/schematic:cypress",
-          "configurations": {
-            "production": {
-              "devServerTarget": "app:serve:production"
-            }
-          },
-          "options": {
-            "devServerTarget": "app:serve"
-          }
-        },
-        "e2e": {
-          "builder": "@cypress/schematic:cypress",
-          "configurations": {
-            "ci": {
-              "headless": true,
-              "watch": false
-            },
-            "production": {
-              "devServerTarget": "app:serve:production"
-            }
-          },
-          "options": {
-            "devServerTarget": "app:serve",
-            "headless": false,
-            "watch": true
           }
         },
         "extract-i18n": {
